@@ -9,6 +9,9 @@ set cmdheight=1
 set wildmenu
 set showcmd
 
+set timeoutlen=500
+set ttimeoutlen=0
+
 set cursorline    " highlight line the cursor is currently on
 set nostartofline " dont go to beginning of the line on buffer switch
 

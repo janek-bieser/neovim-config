@@ -1,8 +1,4 @@
-"
-" Author : Janek Bieser
-"
-
-source ~/.nvim/config/plugins.vim
+source ~/.nvim/config/vundle.vim
 
 syntax on
 
@@ -16,4 +12,4 @@ source ~/.nvim/config/misc.vim
 source ~/.nvim/config/ui.vim
 source ~/.nvim/config/autocommands.vim
 
-" vim: set foldmethod=marker:
+source ~/.nvim/config/plugins.vim

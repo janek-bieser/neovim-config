@@ -1,0 +1,33 @@
+#
+# Class Templates
+#
+
+snippet cl "Class Template" !b
+package ${1:package};
+
+public class `!p snip.rv = snip.basename` ${2:extends ${3:Object}} {
+
+	public `!p snip.rv = snip.basename`() {
+		$0
+	}
+
+}
+endsnippet
+
+snippet main "Main Method" !b
+public static void main(String[] args) {
+	$0
+}
+endsnippet
+
+snippet println "System.out.println" !b
+System.out.println($0);
+endsnippet
+
+snippet print "System.out.print" !b
+System.out.print($0);
+endsnippet
+
+snippet printf "System.out.printf" !b
+System.out.printf("$1", $2);
+endsnippet
