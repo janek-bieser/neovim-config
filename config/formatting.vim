@@ -1,0 +1,10 @@
+set nowrap
+set sidescroll=1
+set sidescrolloff=1
+set tabstop=4
+set smarttab
+set expandtab
+set shiftwidth=4
+set autoindent
+set smartindent
+set shiftround
