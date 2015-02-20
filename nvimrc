@@ -12,4 +12,5 @@ source ~/.nvim/config/misc.vim
 source ~/.nvim/config/ui.vim
 source ~/.nvim/config/autocommands.vim
 
+" 3rd party plugins configurations
 source ~/.nvim/config/plugins.vim

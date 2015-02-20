@@ -72,6 +72,17 @@ exe "hi DiffChange   ctermfg =" . s:blue_b  . " ctermbg=none              cterm=
 exe "hi DiffText     ctermfg =" . s:black_n . " ctermbg=" . s:cyan_b  . " cterm=none"
 exe "hi DiffDelete   ctermfg =" . s:red_n   . " ctermbg=none              cterm=none"
 
+" Errors/Warnings
+exe "hi ErrorMsg ctermfg=" . s:black_n . " ctermbg=" . s:red_n . " cterm=none"
+exe "hi WarningMsg ctermfg=" . s:black_n . " ctermbg=" . s:red_b . " cterm=none"
+
+" Search
+exe "hi Search ctermfg=" . s:black_n . " ctermbg=" . s:blue_n . " cterm=none"
+
+" Status Line
+exe "hi StatusLine ctermfg =" . s:white_b . " ctermbg=" . s:black_b  . " cterm=none"
+exe "hi StatusLineNC ctermfg =" . s:black_b . " ctermbg=" . s:black_n  . " cterm=none"
+
 
 " ------------------------------------------------------------------
 " Java

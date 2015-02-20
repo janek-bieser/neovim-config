@@ -56,3 +56,8 @@ nnoremap <leader>ev :vsp ~/.nvim/nvimrc<cr><c-w><cr>
 
 " source/execute current line
 nnoremap <leader>S :exe getline('.')<cr>
+
+" system clipboard mappings
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+yy
+nnoremap <leader>p "+p
