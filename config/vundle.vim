@@ -18,6 +18,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'fatih/vim-go'
 Plugin 'mxw/vim-jsx'
 Plugin 'SirVer/ultisnips'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
