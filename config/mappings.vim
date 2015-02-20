@@ -61,3 +61,7 @@ nnoremap <leader>S :exe getline('.')<cr>
 vnoremap <leader>y "+y
 nnoremap <leader>Y "+yy
 nnoremap <leader>p "+p
+
+" uppercase word (useful for writing constants)
+nnoremap <c-u> mzgUiw`z
+inoremap <c-u> <esc>mzgUiw`za
