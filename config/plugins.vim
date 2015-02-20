@@ -1,4 +1,5 @@
 " NERD tree
+let NERDTreeIgnore=['\.class$', '\~$']
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 " CtrlP
