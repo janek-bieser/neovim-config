@@ -6,7 +6,7 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 let g:accio_auto_open = 1
 augroup acciogo
     au!
-    au BufWritePost *.go :Accio ["go", "gometalinter"]
+    au BufWritePost *.go :Accio ["go", "golint"]
 augroup END
 
 " deoplete
@@ -32,6 +32,8 @@ nnoremap <leader>go :GFiles<cr>
 nnoremap <leader>b :Buffers<cr>
 
 " airline
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 
 function! AccioStatus()
     let status_line = accio#statusline()
