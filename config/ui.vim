@@ -1,10 +1,9 @@
 set mouse=a
 
 set background=dark
-colorscheme jbdark
+colorscheme zenburn
 
 set number
-set relativenumber
 set cmdheight=1
 set wildmenu
 set showcmd
@@ -17,7 +16,7 @@ set nostartofline " dont go to beginning of the line on buffer switch
 
 set showmode " show current editing mode
 
-set completeopt=menuone
+set completeopt=longest,menuone
 
 " highlight column at 81 characters and beyond 120 characters
 let &colorcolumn="81,".join(range(120,999), ",")

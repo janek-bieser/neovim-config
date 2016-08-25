@@ -1,7 +1,14 @@
 inoremap jj <esc>
 
 " navigate windows
-nnoremap <c-h> <c-w>h
+"
+" The following does not work for me on OSX
+" nnoremap <c-h> <c-w>h
+" so I changed <c-h> to <BS>.
+" See: https://github.com/neovim/neovim/issues/2048
+"
+nnoremap <BS> <c-w>h
+" nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
@@ -65,3 +72,10 @@ nnoremap <leader>p "+p
 " uppercase word (useful for writing constants)
 nnoremap <c-u> mzgUiw`z
 inoremap <c-u> <esc>mzgUiw`za
+
+" select completion entry with using enter key
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" select first item in completion popup
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'

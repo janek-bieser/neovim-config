@@ -1,0 +1,41 @@
+snippet guard "Header file include guards"
+#ifndef __${1:name}__
+#define __$1__
+
+$0
+
+#endif
+endsnippet
+
+#
+# BDD Snipptes for the Catch library.
+# https://github.com/philsquared/Catch
+#
+
+snippet sce "SCENARIO" !b
+SCENARIO( "$1" ) {
+	$0
+}
+endsnippet
+
+snippet giv "GIVEN" !b
+GIVEN( "$1" ) {
+	$0
+}
+endsnippet
+
+snippet whe "WHEN" !b
+WHEN( "$1" ) {
+	$0
+}
+endsnippet
+
+snippet the "THEN" !b
+THEN( "$1" ) {
+	$0
+}
+endsnippet
+
+snippet req "REQUIRE" !b
+REQUIRE( $1 );
+endsnippet
