@@ -30,3 +30,15 @@ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 nnoremap <leader>o :Files<cr>
 nnoremap <leader>go :GFiles<cr>
 nnoremap <leader>b :Buffers<cr>
+
+" airline
+
+function! AccioStatus()
+    let status_line = accio#statusline()
+    if status_line == "Errors: 0"
+        return ""
+    endif
+    return status_line
+endfunction
+
+let g:airline_section_warning = airline#section#create_right(['%{AccioStatus()}'])
