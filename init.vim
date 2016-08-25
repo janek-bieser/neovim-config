@@ -8,9 +8,6 @@ syntax on
 let mapleader = ","
 let maplocalleader = "\\"
 
-" set the shell to zsh to make sure plugin installation is working
-set shell=/usr/local/bin/zsh
-
 " source external config files
 source ~/.nvim/config/formatting.vim
 source ~/.nvim/config/mappings.vim
