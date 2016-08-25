@@ -4,9 +4,12 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 
 " accio syntax checker
 let g:accio_auto_open = 1
-augroup acciogo
+
+augroup acciocompiler
     au!
     au BufWritePost *.go :Accio ["go", "golint"]
+    au BufWritePost *.cpp,*.c :Accio clang %
+    au BufWritePost *.js,*.jsx :Accio eslint %
 augroup END
 
 " deoplete
