@@ -10,17 +10,12 @@ This repository contains a set of vim configuration files for
 3. Install Vundle
 4. Install Plugins
 
-### Install Vundle
+### Plugin Manger
 
-[Vundle]() is used as plugin manager.
+[vim-plug](https://github.com/junegunn/vim-plug) is used as plugin manager.
 
-```
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
 
-### Install Vundle Plugins
+### Install Plugins
 
 1. Open nvim
-2. Run `:PluginInstall`
-
-**Note:** Also run `./install.sh` inside `bundle/YouCompleteMe`
+2. Run `:PlugInstall`
