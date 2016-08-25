@@ -16,5 +16,6 @@ Plug 'SirVer/ultisnips'
 " language specific plugins
 Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
+Plug 'elmcast/elm-vim', { 'for': 'elm' }
 
 call plug#end()

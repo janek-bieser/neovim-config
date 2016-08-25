@@ -47,3 +47,12 @@ function! AccioStatus()
 endfunction
 
 let g:airline_section_warning = airline#section#create_right(['%{AccioStatus()}'])
+
+" elm
+let g:elm_format_autosave = 1
+let g:elm_setup_keybindings = 0
+let g:elm_make_output_file = "/tmp/elm-vim-tmp-compile.js"
+
+augroup acciocompiler
+    au BufWritePost *.elm :ElmMake
+augroup END
