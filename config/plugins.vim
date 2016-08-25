@@ -25,7 +25,6 @@ let g:UltiSnipsEditSplit = "vertical"
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.nvim/ultisnips']
 
 " fzf / fzf.vim
 nnoremap <leader>o :Files<cr>
