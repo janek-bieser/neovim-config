@@ -9,7 +9,7 @@ augroup acciocompiler
     au!
     au BufWritePost *.go :Accio ["go", "golint"]
     au BufWritePost *.cpp,*.c :Accio clang %
-    au BufWritePost *.js,*.jsx :Accio eslint %
+    au BufWritePost *.js,*.jsx :Accio ["eslint %", "flowjs %"]
 augroup END
 
 " deoplete
@@ -56,3 +56,6 @@ let g:elm_make_output_file = "/tmp/elm-vim-tmp-compile.js"
 augroup acciocompiler
     au BufWritePost *.elm :ElmMake
 augroup END
+
+" javascript
+let g:javascript_plugin_jsdoc = 1
