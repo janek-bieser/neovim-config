@@ -1,6 +1,5 @@
 set encoding=utf-8
 
-" source ~/.nvim/config/vundle.vim
 source ~/.nvim/config/install-plugins.vim
 
 syntax on

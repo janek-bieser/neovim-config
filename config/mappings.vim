@@ -58,8 +58,8 @@ nnoremap <silent> <leader>/ :let @/=""<cr>
 inoremap <leader>" ""<esc>i
 inoremap <leader>' ''<esc>i
 
-" Quick Edit nvimrc
-nnoremap <leader>ev :vsp ~/.nvim/nvimrc<cr><c-w><cr>
+" Quick Edit init.vim
+nnoremap <leader>ev :vsp ~/.nvim/init.vim<cr><c-w><cr>
 
 " source/execute current line
 nnoremap <leader>S :exe getline('.')<cr>
@@ -73,9 +73,5 @@ nnoremap <leader>p "+p
 nnoremap <c-u> mzgUiw`z
 inoremap <c-u> <esc>mzgUiw`za
 
-" select completion entry with using enter key
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
-" select first item in completion popup
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+" exit terminal mode shortcut
+tnoremap <esc> <c-\><c-n>
