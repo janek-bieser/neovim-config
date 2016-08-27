@@ -75,3 +75,7 @@ inoremap <c-u> <esc>mzgUiw`za
 
 " exit terminal mode shortcut
 tnoremap <esc> <c-\><c-n>
+
+" quick save
+nnoremap <c-s> :w<cr>
+inoremap <c-s> <esc>:w<cr>a
