@@ -19,5 +19,6 @@ Plug 'zchee/deoplete-go', { 'for': 'go', 'do': 'make' }
 Plug 'elmcast/elm-vim', { 'for': 'elm' }
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'mxw/vim-jsx', { 'for': 'javascript' }
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
 
 call plug#end()
