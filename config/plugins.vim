@@ -3,8 +3,6 @@ let NERDTreeIgnore=['\.class$', '\~$']
 nnoremap <leader>n :NERDTreeToggle<cr>
 
 " accio syntax checker
-let g:accio_auto_open = 1
-
 augroup acciocompiler
     au!
     au BufWritePost *.go :Accio ["go", "golint"]
