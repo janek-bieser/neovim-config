@@ -11,6 +11,8 @@ if has('autocmd')
         au filetype ruby setlocal ts=2 sw=2
 
         au filetype go setlocal nolist
+
+        au filetype coffee setlocal nolist noexpandtab ts=4 sw=4
     augroup END
 
     augroup autosave

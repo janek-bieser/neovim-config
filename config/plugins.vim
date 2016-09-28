@@ -5,9 +5,11 @@ nnoremap <leader>n :NERDTreeToggle<cr>
 " accio syntax checker
 augroup acciocompiler
     au!
-    au BufWritePost *.go :Accio ["go", "golint"]
+    au BufWritePost *.go :Accio ["gobuild", "golint %"]
     au BufWritePost *.cpp,*.c :Accio clang %
     au BufWritePost *.js,*.jsx :Accio ["eslint %", "flowjs %"]
+    au BufWritePost *.rb :Accio rubocop %
+    au BufWritePost *.php :Accio php %
 augroup END
 
 " deoplete
@@ -47,12 +49,16 @@ endfunction
 let g:airline_section_warning = airline#section#create_right(['%{AccioStatus()}'])
 
 " elm
-let g:elm_format_autosave = 1
+let g:elm_format_autosave = 0
 let g:elm_setup_keybindings = 0
 let g:elm_make_output_file = "/tmp/elm-vim-tmp-compile.js"
 
+augroup elmfmt
+    au BufWritePost *.elm :ElmFormat
+augroup END
+
 augroup acciocompiler
-    au BufWritePost *.elm :ElmMake
+    "au BufWritePost *.elm :ElmMake
 augroup END
 
 " javascript
