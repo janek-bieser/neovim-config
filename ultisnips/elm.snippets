@@ -1,0 +1,76 @@
+snippet mod "module" !b
+module $1 exposing (..)$0
+endsnippet
+
+snippet im "import" !b
+import $1${2: exposing (${3:..})}$0
+endsnippet
+
+snippet f "function" !b
+${1:fnName} : ${2:params}
+$1 ${3:params} =
+	$0
+endsnippet
+
+snippet doc "doc comment" !b
+{-| $0
+-}
+endsnippet
+
+snippet app "barebones app" !b
+module Main exposing (..)
+
+import Html exposing (Html, div, text)
+import Html.App as Html
+
+
+main =
+	Html.program
+		{ init = init
+		, view = view
+		, update = update
+		, subscriptions = subscriptions
+		}
+
+
+
+-- MODEL
+
+
+type alias Model =
+	String
+
+
+init : ( Model, Cmd Msg )
+init =
+	"hello world" ! []
+
+
+
+-- UPDATE
+
+
+type Msg
+	= NoOp
+
+
+update : Msg -> Model -> ( Model, Cmd Msg )
+update msg model =
+	case msg of
+		NoOp ->
+			model ! []
+
+
+
+-- VIEW
+
+
+view : Model -> Html Msg
+view model =
+	div [] [ text model ]
+
+
+subscriptions : Model -> Sub Msg
+subscriptions model =
+	Sub.none
+endsnippet
