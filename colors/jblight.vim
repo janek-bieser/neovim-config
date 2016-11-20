@@ -33,7 +33,7 @@ let s:c_blue0 = 031
 let s:c_blue1 = 038
 let s:c_blue2 = 045
 let s:c_orange0 = 136
-let s:c_orange1 = 214
+let s:c_orange1 = 208
 let s:c_orange2 = 216
 let s:c_puple0 = 171
 
@@ -59,7 +59,7 @@ exe "hi Operator   ctermfg =" . s:c_blue2    . " ctermbg=none cterm=none"
 exe "hi String     ctermfg =" . s:green_n    . " ctermbg=none cterm=none"
 exe "hi Number     ctermfg =" . s:c_blue1  . " ctermbg=none cterm=none"
 exe "hi Boolean    ctermfg =" . s:c_puple0   . " ctermbg=none cterm=none"
-exe "hi Special    ctermfg =" . s:white_b    . " ctermbg=none cterm=none"
+exe "hi Special    ctermfg =" . s:c_gray0    . " ctermbg=none cterm=none"
 
 exe "hi Folded     ctermfg =" . s:blue_b  . " ctermbg=none cterm=none"
 exe "hi SpecialKey ctermfg =" . s:c_gray1 . " ctermbg=none cterm=none"
@@ -92,7 +92,6 @@ exe "hi DiffDelete   ctermfg =" . s:red_n   . " ctermbg=none              cterm=
 
 " Errors/Warnings
 exe "hi ErrorMsg ctermfg=" . s:red_n . " ctermbg=none cterm=none"
-"exe "hi WarningMsg ctermfg=" . s:red_n . " ctermbg=" . s:c_orange2 . " cterm=none"
 
 " Search
 exe "hi Search ctermfg=" . s:black_n . " ctermbg=" . s:blue_n . " cterm=none"
@@ -135,3 +134,13 @@ exe "hi haskellDecl ctermfg =" . s:c_orange1 . " ctermbg=none cterm=none"
 exe "hi haskellDeclKeyword ctermfg =" . s:c_orange1 . " ctermbg=none cterm=none"
 exe "hi haskellWhere ctermfg =" . s:c_orange2 . " ctermbg=none cterm=none"
 exe "hi haskellDelimiter ctermfg =" . s:c_gray1 . " ctermbg=none cterm=none"
+
+
+" ------------------------------------------------------------------
+" Go
+" ------------------------------------------------------------------
+
+exe "hi goDeclType ctermfg =" . s:c_orange2 . " ctermbg=none cterm=none"
+exe "hi goMethod ctermfg =" . 241 . " ctermbg=none cterm=none"
+exe "hi goReceiverVar ctermfg =" . 241 . " ctermbg=none cterm=none"
+exe "hi goReceiverType ctermfg =" . 31 . " ctermbg=none cterm=none"
