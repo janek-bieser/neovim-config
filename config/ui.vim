@@ -1,7 +1,7 @@
 set mouse=a
 
-set background=dark
-colorscheme zenburn
+" set background=dark
+colorscheme jblight
 
 set number
 set cmdheight=1
@@ -25,7 +25,7 @@ set backspace=indent,eol,start
 
 " highlight whitespace
 set list
-set listchars=tab:>-,trail:.,extends:>,precedes:<,nbsp:.
+set listchars=tab:‣\ ,trail:.,extends:>,precedes:<,nbsp:.
 
 
 "
