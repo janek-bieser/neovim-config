@@ -54,7 +54,7 @@ let g:fzf_colors =
 
 " airline
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16'
+let g:airline_theme='jblight'
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
 endif
