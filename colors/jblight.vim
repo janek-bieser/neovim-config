@@ -176,6 +176,15 @@ exe "hi haskellDelimiter ctermfg =" . s:t_gray02 . " ctermbg=none cterm=none" . 
 
 
 " ------------------------------------------------------------------
+" Elm
+" ------------------------------------------------------------------
+
+exe "hi elmType ctermfg=" . s:t_gray01 . " ctermbg=none cterm=none guifg=" . s:g_gray01 . " guibg=none gui=none"
+exe "hi elmTypedef ctermfg =" . s:t_orange02 . " ctermbg=none cterm=none" . " guifg=" . s:g_orange02 . " guibg=none gui=none"
+exe "hi elmBraces ctermfg =" . s:t_gray02 . " ctermbg=none cterm=none" . " guifg=" . s:g_gray02 . " guibg=none gui=none"
+exe "hi elmDelimiter ctermfg =" . s:t_gray02 . " ctermbg=none cterm=none" . " guifg=" . s:g_gray02 . " guibg=none gui=none"
+
+" ------------------------------------------------------------------
 " Go
 " ------------------------------------------------------------------
 
