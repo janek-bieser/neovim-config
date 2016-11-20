@@ -10,7 +10,10 @@ augroup acciocompiler
     au BufWritePost *.js,*.jsx :Accio ["eslint %", "flowjs %"]
     au BufWritePost *.rb :Accio rubocop %
     au BufWritePost *.php :Accio php %
+    au BufWritePost *.hs :cexpr [] | :Accio ["hdevtools %", "hlint %"]
 augroup END
+
+" let g:accio_auto_copen = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -35,8 +38,12 @@ nnoremap <leader>go :GFiles<cr>
 nnoremap <leader>b :Buffers<cr>
 
 " airline
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16'
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
 
 function! AccioStatus()
     let status_line = accio#statusline()
@@ -68,3 +75,9 @@ let g:jsx_ext_required = 0
 
 " rust
 let g:rustfmt_autosave = 1
+
+" haskell
+augroup haskellg
+    au FileType haskell nnoremap <buffer> <leader>t :HdevtoolsType<cr>
+    au FileType haskell nnoremap <buffer> <leader>c :HdevtoolsClear<cr>
+augroup END

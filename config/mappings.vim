@@ -79,3 +79,8 @@ tnoremap <esc> <c-\><c-n>
 " quick save
 nnoremap <c-s> :w<cr>
 inoremap <c-s> <esc>:w<cr>a
+
+" debug syntax highlighting
+map <leader>h :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
